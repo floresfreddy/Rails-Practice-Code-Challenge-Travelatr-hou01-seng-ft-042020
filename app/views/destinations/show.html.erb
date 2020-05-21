@@ -1,0 +1,18 @@
+<h1>Destinations#show</h1>
+<br>
+
+<p>Recent Posts</p>
+<% @recent_posts.each do |p| %>
+<li>
+<%= link_to p.title, post_path(p)  %>
+</li>
+ <% end %>
+
+ <br>
+ <br>
+ <p>Featured Post</p>
+ <%= link_to @featured_post.title, post_path(@featured_post) %>
+
+ <br>
+ <p>Average Blogger Age</p>
+ <%= @average_age %>

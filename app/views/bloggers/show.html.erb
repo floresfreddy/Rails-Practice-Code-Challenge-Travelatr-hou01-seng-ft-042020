@@ -1,0 +1,11 @@
+<h1>Bloggers#show</h1>
+<p>Find me in app/views/bloggers/show.html.erb</p>
+<br>
+
+<p>Total Likes</p>
+<%= @likes %>
+
+<br>
+<br>
+<p>Feature Posts</p>
+<%= link_to @feature_post.title, post_path(@feature_post) %>

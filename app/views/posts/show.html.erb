@@ -1,0 +1,15 @@
+<h1>Posts#show</h1>
+<p>Find me in app/views/posts/show.html.erb</p>
+ 
+<%= link_to @post.blogger.name, blogger_path(@post.blogger)  %>
+<br>
+<%= link_to @post.destination.name, destination_path(@post.destination)  %>
+
+ <%= @post.title %>
+ <br>
+ <%= @post.content %>
+
+
+<br>
+
+

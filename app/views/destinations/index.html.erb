@@ -1,0 +1,10 @@
+<h1>Destinations#index</h1>
+
+<br>
+<% @destinations.each do |b| %>
+<li>
+<%= link_to b.name, destination_path(b) %>
+</li>
+<% end %>
+
+<br>
